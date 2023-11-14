@@ -98,22 +98,9 @@ body {
   user-select: none;
 }
 
-.rating:hover {
-  color: var(--white);
-  background-color: var(--medium-grey);
-  cursor: pointer;
-}
-
-.selected,
-.selected:hover {
+.selected {
   color: var(--white);
   background-color: var(--orange);
-}
-
-.submit-button:hover {
-  color: var(--orange);
-  background-color: var(--white);
-  cursor: pointer;
 }
 
 .thank-you-image {
@@ -143,4 +130,23 @@ body {
 
 .attribution a {
   color: var(--attribution-blue);
+}
+
+@media (hover: hover) {
+  .submit-button:hover {
+    color: var(--orange);
+    background-color: var(--white);
+    cursor: pointer;
+  }
+
+  .rating:hover {
+    color: var(--white);
+    background-color: var(--medium-grey);
+    cursor: pointer;
+  }
+
+  .selected:hover {
+    color: var(--white);
+    background-color: var(--orange);
+  }
 }
