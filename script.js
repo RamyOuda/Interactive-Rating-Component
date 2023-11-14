@@ -14,11 +14,8 @@ let previousRatingElement = null;
 
 // Initialize rating and submit events
 function initializeEventListeners() {
-  allRatingElements.forEach((rating) =>
-    rating.addEventListener("click", onRatingClicked)
-  );
-
-  submitButtonElement.addEventListener("click", onSubmit);
+  allRatingElements.forEach((rating) => (rating.onclick = onRatingClicked));
+  submitButtonElement.onclick = onSubmit;
 }
 
 // Handle rating click events
