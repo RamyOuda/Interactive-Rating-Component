@@ -14,7 +14,7 @@ let previousRatingElement = null;
 
 // Initialize rating and submit events
 function initializeEventListeners() {
-  [...allRatingElements].forEach((rating) =>
+  allRatingElements.forEach((rating) =>
     rating.addEventListener("click", onRatingClicked)
   );
 
