@@ -31,6 +31,7 @@ function onRatingClicked(event) {
 
     if (element === previousRatingElement) {
       previousRatingElement = null;
+      selectedRating = null;
       return;
     }
   }
