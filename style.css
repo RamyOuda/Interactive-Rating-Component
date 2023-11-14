@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --darker-blue: hsl(214, 13%, 11%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --attribution-blue: hsl(228, 45%, 44%);
+}
+
+* {
+  font-family: "Overpass", sans-serif;
+  transition: 0.25s;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--very-dark-blue);
+}
+
+.card-front,
+.card-back {
+  display: flex;
+  flex-direction: column;
+  border-radius: 32px;
+  height: 420px;
+  width: 420px;
+  padding: 32px;
+  background: radial-gradient(
+    circle at top,
+    var(--dark-blue),
+    var(--darker-blue)
+  );
+  box-sizing: border-box;
+}
+
+.card-back {
+  display: none;
+  align-items: center;
+}
+
+.star-icon-wrapper {
+  padding: 16px;
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+  margin-bottom: 32px;
+}
+
+.header-text {
+  color: var(--white);
+  font-size: 28px;
+}
+
+.body-text {
+  color: var(--medium-grey);
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.ratings-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 32px;
+}
+
+.star-icon-wrapper,
+.star-icon {
+  height: 24px;
+  width: 24px;
+  user-select: none;
+}
+
+.rating {
+  text-align: center;
+  color: var(--medium-grey);
+  font-weight: 700;
+  width: 20px;
+  background-color: var(--dark-blue);
+  padding: 16px;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.submit-button {
+  color: var(--white);
+  background-color: var(--orange);
+  border: none;
+  height: 44px;
+  border-radius: 32px;
+  font-size: 16px;
+  user-select: none;
+}
+
+.rating:hover {
+  color: var(--white);
+  background-color: var(--medium-grey);
+  cursor: pointer;
+}
+
+.selected,
+.selected:hover {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.submit-button:hover {
+  color: var(--orange);
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.thank-you-image {
+  width: 200px;
+  margin-bottom: 32px;
+}
+
+.rating-selection {
+  color: var(--orange);
+  background-color: var(--dark-blue);
+  padding: 8px 16px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+.card-back .body-text {
+  text-align: center;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  color: var(--light-grey);
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--attribution-blue);
+}
